@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Лэндинг проекта Все.Рецепты</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-primary bg-light shadow">
+        <a class="navbar-brand" href="{% url 'main' %}">Все.Рецепты</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="http:/localhost:8000/">Главная <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http:/localhost:8000/admin">Админка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ССЫЛКА НА ЛЭНДИНГ">Лэндинг</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http:/localhost:8000/api/reciepes">RestAPI (reciepes)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http:/localhost:8000/api/dishes">RestAPI (dishes)</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Лендинг</h1>
+<div class='container'>
+    <div class='row'>
+        <div class='col-12'>
+            <h1>О проекте</h1>
+            <p>Сайт со всеми рецептами</p>
+        </div>
+        <div class="col-12 mb-4">
+            <img class='img-fluid rounded' src="https://sun9-5.userapi.com/impg/Q9_lKE1Yq2mQfzD5qGSCOKQenEG7WxPYC9yy4w/bphrMeA7O-8.jpg?size=1200x800&quality=96&sign=58aacd3fdfb754d3a40f811485ec3322&type=album" alt="">
+        </div>
+        <div class='col-6 mb-4'>
+            <img class="img-fluid rounded " src="https://sun9-24.userapi.com/impg/-aogQS9O4S5F8NEgwzpZt9rVHUpoLdvstwbQZA/yRw6BRaxZLU.jpg?size=640x640&quality=96&sign=a867324cf20d506925a5540a2219390c&type=album">
+        </div>
+        <div class='col-6 mb-4"'>
+            <h2>Что нужно сделать?</h2>
+            <p>Необходимо было сделать сайт со всеми популярными рецептами, с их описанием, с их фотографиями и с их ингредиентами </p>
+            <p>Также необходимо разработать удобную админ-панель с возможностью импорта-экспорта данных</p>
+        </div>
+        <div class="col-6 mb-4">
+            <h2>Разработка структуры данных</h2>
+            <p>Разработка физической схемы бд</p>
+        </div>
+        <div class="col-6 mb-4">
+            <img class='img-fluid rounded' src="../schema.jpg" alt=" ">
+        </div>
+        <div class="col-6 mb-4 pb-4 border-bottom">
+            <img class="img-fluid rounded " src="https://sun9-12.userapi.com/impg/-K320A1tpX7ZIRfB9wqxlSq-dBJrZmxJbv-5Fw/8vgnnkIJy1k.jpg?size=2000x1000&quality=96&sign=0d1d9697916e19d121360533ea772516&type=album" alt=" ">
+        </div>
+        <div class="col-6 mb-4 pb-4 border-bottom">
+            <h2>Изучение Django, Rest Framework, Postman</h2>
+            <p>Изучение документации, видеоуроков, лекций и т.п.</p>
+        </div>
+        <div class="row bg-success text-light rounded p-4 mb-4 border-bottom">
+            <div class="col-12">
+                <h1>Разработчик</h1>
+            </div>
+            <div class="col-4">
+                <img class='img-fluid rounded' src="https://sun9-72.userapi.com/impg/rjnvgz7njlu4VktLduKPCx7yhIcc4sptmNWzkw/fY7atW7GTuc.jpg?size=1542x2160&quality=96&sign=9cd43112f86010e95f2478c71b2ea64e&type=album" alt="">
+            </div>
+            <div class="col-8">
+                <h2>Березина Анна Александоровна</h2>
+                <p>Группа 191-321. Django-программист</p>
+                <h3>Ведущий веб-разработчик</h3>
+                <p>Создатель сайта.</p>
+            </div>
+        </div>
+        <div class="row bg-primary rounded text-white roundend p-4 mt-4">
+            <div class="col-12">
+                <h1>Используемые давай технологии</h1>
+            </div>
+            <div class="col-4">
+                <img class='img-fluid rounded' src="https://habrastorage.org/getpro/habr/post_images/1d5/28e/2cb/1d528e2cb5fbc29ad16c74e5d883c371.png" alt="">
+            </div>
+            <div class="col-4">
+                <img class='img-fluid rounded' src="https://www.django-rest-framework.org/img/logo.png" alt="">
+            </div>
+            <div class="col-4">
+                <img class='img-fluid rounded' src="https://habrastorage.org/getpro/habr/post_images/40e/c7f/b4f/40ec7fb4f579c099e14f300685f2222c.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+    <footer class='shadow-lg p-4 bg-light text-primary mt-4 text-center'>
+        <h1>Московский политех 2020</h1>
+    </footer>
+</body>
+
+</html>

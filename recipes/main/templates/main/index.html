@@ -1,0 +1,23 @@
+{% extends 'main/base.html' %} 
+{% block title %} Главная {%endblock%}
+{% block main %} 
+    <div class='container'>
+        <h1>Блюда</h1>
+        <div class='row'>
+            {% for dishe in dishes %}
+            <div class='col-3 m-4 p-3'>
+                    <h5>{{dishe.id}}: {{dishe.title}}</h5>
+                    <p>Приготовлено {{dishe.manufacture_date}}<br>
+                    Годно до {{dishe.sell_by}}<br>
+                    Количество калорий: {{dishe.calories}}<br>
+                    Рецепт: <i>{{dishe.recipe}}</i></p>
+                    {% with dishe.photos.all as photos %}
+                    {% for photo in photos %}
+                    <img class='img-fluid rounded ' src='{{photo.photo_url}}' alt='Фотография'>
+                    {% endfor %}
+                    {% endwith %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
